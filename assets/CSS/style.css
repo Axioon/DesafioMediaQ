@@ -1,0 +1,359 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration:none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+nav {
+  grid-area: nav;
+}
+aside {
+  grid-area: aside;
+}
+
+section{
+	grid-area:section;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "aside"
+    "section"
+    "main"
+    "footer";
+  gap: 10px;
+  background-color: #ecf7f7d6;
+  height: 10%;
+}
+
+main{
+height: 410px;
+}
+aside{
+		display: flex;
+		justify-content: space-between;
+    background-color: #415e89;
+    width: 100%;
+}
+
+.footeer{
+  height: 100%;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 5%;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-areas:
+    "grid-item1" 
+    "grid-item2" 
+    "grid-item3" 
+    "grid-item4"
+    "grid-item5 "
+    "grid-item6" 
+    "grid-item7"
+    "grid-item8";
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 2px;
+  width: 95%;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.slider {
+  width: 100%; 
+  height: 80%; 
+  overflow-y: auto;
+}
+
+
+.color{
+	background-color: rgb(2, 2, 124);
+  color: white;
+
+}
+
+.t1{
+  text-align: center;
+}
+
+.items{
+  display: none;
+
+}
+.asai{
+
+	color: white;
+	
+}
+
+img{
+	height: 70%;
+	width: 70%;
+}
+
+
+.a{
+  text-decoration: none;
+  color: white;
+  
+}
+.fot{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  margin-top: 2%;
+}
+
+
+.mar{
+  margin-top: 0%;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.mar0{
+  margin-top:2%;
+  margin-bottom:0%;
+  text-align: center;
+
+}
+
+.red{
+  text-align: center;
+  padding-top: 5%;
+}
+
+.Select{
+  width: 70%;
+  
+}
+
+.sec1{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items:center ;
+
+}
+
+.c1{
+  background-color: rgb(2, 2, 124);
+  color: white;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 0%;
+  padding-bottom: 1%;
+  margin-bottom: 10%;
+}
+.tboton{
+margin-top: 2%;
+margin-bottom: 2%;
+}
+
+
+.bloque{
+
+border: 1px solid rgb(138, 138, 157);
+color: blue;
+
+
+}
+
+@media screen and (min-width:576px) {
+
+  .Select{
+    width: 100%;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+  }
+
+  aside{
+		display: flex;
+		flex-direction: column;
+	justify-content: none;
+		align-content: center;
+    
+		height: 100%;
+		background-color: #415e89;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "aside section section section"
+      "aside main main main"
+      "footer main main main";
+    gap:0;
+    background-color: #ecf7f7d6;
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-areas:
+      "grid-item1 grid-item2 grid-item3 grid-item4"
+      "grid-item5 grid-item6 grid-item7 grid-item8";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+    width: 95%;
+  }
+
+  .slider {
+    width: 100%; 
+    height: 80%; 
+    overflow-y: auto;
+  }
+
+  .bar-btn{
+    display: none;
+
+  }
+  
+aside{
+  height: 100%;
+}
+
+.nav-menu{
+  height: 30%;
+  top:0;
+  background: none;
+  transition: none;
+  
+}
+
+.nav-menu li{
+  transition: none;
+}
+
+.nav-meny lia a {
+  font-size:12 px; 
+}
+
+.items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+main{
+  height: 100%;
+  }
+
+  .fot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 2%;
+  }
+  
+  
+  .mar{
+    margin-top: 0%;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  
+  .mar0{
+    margin-top:2%;
+    margin-bottom:0%;
+    text-align: center;
+  
+  }
+}
+
+
+
+
+
+
+
+
+div{
+  margin:0px;
+  padding:0px;
+}
+
+.bar-btn{
+    color:white;
+    margin-right:20px;
+
+    cursor:pointer;
+}
+
+.nav-menu{
+  
+  width: 1fr;
+
+  top:100px;
+  background: #415e89;
+  transition:all .5s;
+  text-align: center;
+  
+}
+
+.nav-menu li{
+  display:block;
+  line-height:30px;
+  margin: 10px 0;
+}
+
+.nav-menu li a {
+  color:white;
+  font-size:16px;
+  text-transform:uppercase;
+}
+
+
+#check{
+  display:none;
+
+}
+
+#check:checked ~.nav-menu{
+  height:50vh;
+
+}
+
+#check:checked ~.nav-menu li{
+  display:block;
+
+}
+
+.sty{
+  font-family: 'Roboto', sans-serif;
+  width: 300px;
+  
+}
+
+.l{
+  text-align: center;
+}
